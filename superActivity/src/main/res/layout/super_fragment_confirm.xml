@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFF5"
+    android:orientation="vertical"
+    tools:context="com.authreal.ui.SuperActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text="身份证详细信息"
+        android:visibility="gone"
+        android:textColor="#aa000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="请确认您的信息,姓名可点击修改哦"
+        android:textColor="#99000000"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        style="@style/LinerLayoutConfirm"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextConfirmLeft"
+            android:layout_centerVertical="true"
+            android:text="姓　名" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/TextConfirmRight"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_name"
+            android:background="@null"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:gravity="center_vertical"
+            android:textColor="@color/super_real_modify" />
+
+        <ImageView
+            android:src="@drawable/super_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/LinerLayoutConfirm"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/TextConfirmLeft"
+            android:text="身份证" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            style="@style/TextConfirmRight" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinerLayoutConfirm"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/TextConfirmLeft"
+            android:text="有效期" />
+
+        <TextView
+            android:id="@+id/tv_valid"
+            style="@style/TextConfirmRight" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/super_btn_light"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/super_confirmed"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</LinearLayout>

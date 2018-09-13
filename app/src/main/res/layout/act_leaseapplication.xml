@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:adjustViewBounds="true" 
+	        android:orientation="vertical" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="vertical" >
+				
+	        <TextView
+	            android:id="@+id/tvToCheck"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:background="@drawable/bg_corners_ff9453"
+	            android:gravity="center"
+	            android:text="回收信息"
+	            android:textColor="@color/white"
+	            android:textSize="16sp" />
+	            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="回收金额"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRecoveryPrice"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tvClearItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="检测服务费"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvServiceCharge"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="收款银行卡"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvBankName"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tvBankCard"
+                    android:layout_centerVertical="true"
+                    android:text="银行"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+                
+                <TextView
+                    android:id="@+id/tvBankCard"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="()"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	           	android:layout_marginTop="8dp"
+	            android:orientation="vertical" >
+				
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:background="@drawable/bg_corners_ffae58"
+	            android:gravity="center"
+	            android:text="租用信息"
+	            android:textColor="@color/white"
+	            android:textSize="16sp" />
+	        
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="设备金额"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                
+                <TextView
+                    android:id="@+id/tvDevicePrice"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </RelativeLayout>	        
+	            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tvDepositName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="押金(元)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="*租赁结束时，押金会退回到原支付账户"
+                    android:layout_below="@+id/tvDepositName"
+                    android:textColor="#b5b5b5"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tvDepositPrice"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tvDayFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="日租金"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="*租赁时间越长，日租费用越低"
+                    android:layout_below="@+id/tvDayFee"
+                    android:textColor="#b5b5b5"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tvDailyRents"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rlDepositTime"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tvDepositTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="首次租金"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                
+                <TextView
+                    android:id="@+id/tvFirstRemind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:layout_below="@+id/tvDepositTime"
+                    android:textColor="#b5b5b5"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tvFirstFee"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="超时租赁费(天)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                
+                <TextView
+                    android:id="@+id/tvTimeoutCost"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            
+	        </LinearLayout>
+	        
+	        <RelativeLayout
+                android:id="@+id/rlAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:layout_marginTop="8dp"
+                >
+
+                <ImageView
+                    android:id="@+id/ivAddress"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_address_manage" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ivAddress"
+                    android:layout_toLeftOf="@+id/ivRight"
+                    android:layout_toRightOf="@+id/ivAddress"
+                    android:layout_toStartOf="@+id/ivRight"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvName"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvAddAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="点击添加收货地址"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_list_right" />
+            </RelativeLayout>
+	        
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="12dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:gravity="center_vertical"
+		        android:orientation="horizontal" >
+		
+		        <CheckBox
+		            android:id="@+id/cbAgree"
+		            android:layout_width="18dp"
+		            android:layout_height="18dp"
+		            android:background="@drawable/checkbox"
+		            android:button="@null"
+		            android:checked="false" />
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:layout_marginRight="5dp"
+		            android:text="我已阅读并同意"
+		            android:textColor="#909090"
+		            android:textSize="12sp" />
+		
+		        <TextView
+		            android:id="@+id/tvRule1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="#00a0e9"
+		            android:text="《小飞鱼售后回租协议》"
+		            android:textSize="12sp" />
+		    </LinearLayout>
+		    
+		    
+	
+	        <TextView
+	            android:id="@+id/tvToSign"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="12dp"
+	            android:background="@color/white"
+	            android:gravity="center"
+	            android:text="点击签署电子协议"
+	            android:textColor="#00a0e9"
+	            android:textSize="16sp" />
+	        
+	        <ImageView
+                android:id="@+id/ivSignature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDepositTime"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="*提示:审核通过后打款，打款时直接扣除押金和首次租金"
+                android:textColor="#b5b5b5"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvToSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_button"
+                android:gravity="center"
+                android:text="提交申请"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+	
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="100dp"
+	            android:layout_gravity="center_horizontal"
+	            android:gravity="center"
+	            android:textColor="@color/white" />
+	    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

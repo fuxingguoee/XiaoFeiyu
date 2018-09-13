@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_extension_qr"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/userImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="50dp"
+        android:contentDescription="@string/app_name"/>
+    <ImageView
+        android:id="@+id/userImage1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="50dp"
+        android:contentDescription="@string/app_name"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_above="@+id/ivShare"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/ivShare"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_btn_share" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:text="1、分享到朋友圈或社交网络，可以获得更多用户免费注册，分享越多，收益越多\n2、分享金：每推荐一个客户并成功借款，奖励该借款金额的1%，后续该借款按时还款满30期再奖励2%\n3、长按可将其保存到手机相册"
+        android:textColor="@color/text_black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

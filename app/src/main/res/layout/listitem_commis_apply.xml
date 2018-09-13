@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tvBanKCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自助提现"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_toRightOf="@+id/tvBanKCard"
+            android:layout_toEndOf="@+id/tvBanKCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自助提现"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBanKCard"
+            android:layout_marginTop="5dp"
+            android:text="1111-11-11 11:11:11"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="￥100"
+            android:textColor="@color/text_red"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

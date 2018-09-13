@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8a8a8a"/>
+
+    <LinearLayout
+        android:id="@+id/v_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:id="@+id/v_front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="24dp"
+                android:paddingTop="24dp">
+
+                <ImageView
+                    android:id="@+id/iv_front"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/super_ic_identity_front" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/v_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@id/v_front"
+                android:paddingBottom="24dp"
+                android:paddingTop="24dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/super_ic_identity_back"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:padding="16dp"
+            android:textColor="#00a4e8"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/v_float"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/v_bottom">
+
+        <ImageView
+            android:id="@+id/iv_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/v_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/v_bottom">
+
+        <TextView
+            android:id="@+id/tv_front_back_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/super_take_front"
+            android:textColor="#b3ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_take_card_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_front_back_tips"
+            android:layout_centerHorizontal="true"
+            android:textColor="#88ffffff" />
+
+        <TextView
+            android:id="@+id/tv_tip_long_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/super_tip_long"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:text="@string/super_tip_long_time"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/v_detecting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/v_bottom"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/detecting_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/super_detecting"
+            android:textColor="#b3ffffff"
+            android:textSize="24sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detecting_now"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/agree_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/check_box_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="2dp"
+            android:button="@drawable/super_agree_bg"
+            android:onClick="userAgreementChenge"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:clickable="true"
+            android:text="我已阅读并同意用户协议"
+            android:onClick="setUserAgreement"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

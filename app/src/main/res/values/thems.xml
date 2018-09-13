@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 父类为Theme.Sherlock.Light，即白底黑字（如果是Theme.Sherlock，则为黑底白字）, 为了兼容考虑，所有样式的相关item需要写2遍 -->
+     <style name="Theme.DEMO" parent="@style/Widget.AppCompat.Light.ActionBar">
+        
+        <item name="actionBarStyle">@style/Widget.DEMO.ActionBar</item>
+        <item name="actionBarTabStyle">@style/Widget.DEMO.ActionBarTab</item> 
+        <item name="actionBarItemBackground">@drawable/selector_actionbar_button</item>
+    </style>
+
+    <!-- 标题栏的样式 -->
+    <style name="Widget.DEMO.ActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@color/main_logo</item>
+        <item name="backgroundStacked">#ffeeeeee</item>
+        <item name="backgroundSplit">@color/main_logo</item>
+        <item name="titleTextStyle">@style/Widget.DEMO.ActionBar.Title</item>
+        <item name="indeterminateProgressStyle">@style/IndeterminateProgress</item>
+    </style>
+
+    <!-- 标题栏的标题样式 -->
+    <style name="Widget.DEMO.ActionBar.Title" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="Widget.DEMO.ActionBarTab" parent="@style/Widget.AppCompat.ActionBar.TabView">       
+        <item name="android:background">@drawable/tab_indicator</item>
+    </style>
+    
+    <style name="IndeterminateProgress" parent="@style/Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_small_holo</item>
+        <item name="android:minWidth">16dip</item>
+        <item name="android:maxWidth">16dip</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

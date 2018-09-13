@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/moxie_mailimport_color_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextView_Line_MailBox"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/moxie_mailimport_color_gray_1" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_MailBox"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.moxie.client.widget.imagecache.SmartImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:id="@+id/iv_ico"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:text="其他"
+            android:textColor="@color/moxie_mailimport_color_blue"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

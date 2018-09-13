@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8a8a8a"
+    tools:context="com.authreal.ui.LivenessFragment">
+
+    <LinearLayout
+        android:id="@+id/lyt_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <SurfaceView
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/lyt_surface"
+        android:layout_alignTop="@id/lyt_surface"
+        android:scaleType="fitXY"
+        android:src="@drawable/super_mask_avatar" />
+
+    <LinearLayout
+        android:id="@+id/v_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/super_live_tip"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_tip"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="-10dp"
+            android:background="@drawable/super_oval_light"
+            android:scaleType="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/v_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000">
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/super_oval_light"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="@string/super_start"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/tv_tip_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_start"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="@string/super_tip_live"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/btn_auth_pass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:background="@drawable/super_btn_light"
+            android:gravity="center"
+            android:text="@string/super_face_auth_pass"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/v_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lyt_surface"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_step_1"
+            style="@style/TVLiveStep"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/tv_step_2"
+            style="@style/TVLiveStep"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/tv_step_3"
+            style="@style/TVLiveStep"
+            android:text="3" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_tip_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/super_corner_blank"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_focus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/super_tip_focus"
+        android:textColor="#9fffffff"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/tv_tip_long"
+        android:layout_toEndOf="@+id/tv_tip_long" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="64sp"
+        android:textStyle="bold" />
+
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/super_dialog_input" />
+
+    <LinearLayout
+        android:id="@+id/agree_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/check_box_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="2dp"
+            android:button="@drawable/super_agree_bg"
+            android:onClick="userAgreementChenge"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:clickable="true"
+            android:text="我已阅读并同意用户协议"
+            android:onClick="setUserAgreement"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

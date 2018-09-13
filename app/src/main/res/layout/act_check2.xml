@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@color/white">
+
+	<LinearLayout
+	    android:id="@+id/llZero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_marginTop="50dp"
+        android:layerType="software"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/tvStep1"
+                android:layout_toStartOf="@+id/tvStep1"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tvStep1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_check_step"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line2"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvStep2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_check_step2"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line2"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvStep3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_check_step2"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/tvStep3"
+                android:layout_toRightOf="@+id/tvStep3"
+                android:background="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/assessList1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" />
+    
+    <ListView
+        android:id="@+id/assessList2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:visibility="gone"
+        android:scrollbars="none" />
+    
+    <ListView
+        android:id="@+id/assessList3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:visibility="gone"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小飞鱼</string>
+    <string name="home">首页</string>
+    <string name="user">我的</string>
+    
+    <string name="check_network">请检查网络连接！</string>
+	<string name="member_register">会员注册</string>
+    <string name="sd_check_fail">未检测到存储设备，请插入SD卡！</string>
+    <string name="storageDevice">请插入存储设备，否则将无法读取图片</string>
+    <string name="exit_app">再按一次退出程序</string>
+    <string name="service_qq1">2969722640</string>
+    <string name="account_notice">手机号注册</string>
+    <string name="account_format_error">用户名格式错误</string>
+    <string name="password_different">两次输入的密码不一致</string>
+    <string name="reg_suceess">注册成功，请登录</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="slider">滑块验证</string>
+    <string name="login_account">请输入您的手机号码</string>
+    <string name="login_password">请输入登录密码</string>
+    <string name="login_CPassword">登录密码</string>
+    <string name="login_verification_code">短信验证码</string>
+    <string name="deal_password">交易密码</string>
+    <string name="code">验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="login_out">退出登录</string>
+    <string name="get_back_password">找回密码</string>
+    <string name="modify_password">修改密码</string>
+    <string name="post_touxiang">修改头像</string>
+    <string name="help">帮助</string>
+    <string name="loan_help">帮助说明</string>
+    <string name="verified_user">实名认证</string>
+    <string name="verified_zhushi">注：认证审核时间   早上9:00—12:00；\n\t\t下午12:30—18:00</string>
+    <string name="loan_zhushi">注：本次分期由通华小贷提供服务</string>
+    <string name="check_result">检测结果</string>
+    <string name="check">设备评估</string>
+    <string name="guide">小飞鱼使用指南</string>
+    <string name="feedbackHint">请输入您的建议和反馈</string>
+        
+    <string name="setting">设置</string>
+    <string name="about_us">关于我们</string>
+    <string name="about_us_tp1">自主研发的APP平台，本公司是苏州第一家手机租赁服务商，手机出租商业模式提出者，
+        手机租赁行业的开创者与领导者， 租机服务范围覆盖全国各省份一二线城市，为个人用户和企业用户， 
+        提供以租代购、分期租机、企业租机、测试租机、融资租赁等多元化租机业务。</string>
+    <string name="version">当前版本号：</string>
+ <!--    <string name="company">宁波欣珺捷商务信息咨询有限公司\t版权所有</string>
+    <string name="copyright">Copyright(©) 2016-2020 All Right Reserved</string> -->
+    <string name="deleting">正在删除，请稍等...</string>
+    <string name="wait">请稍后...</string>
+    <string name="clean_cache_sucess">清除缓存成功</string>
+    
+    <string name="dialog_title">提示</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    
+    <string name="my_data">个人资料</string>
+    <string name="my_data_prompt">请完善以下资料，资料越完善，贷款额度越高</string>
+    <string name="my_education">我的学历</string>
+    <string name="my_loan">我的借款</string>
+    <!-- <string name="order_details">借款明细</string> -->
+    <string name="latefee_details">滞纳金详单</string>
+    <string name="my_repay">我的还款</string>
+    <string name="rate_query_tp1" formatted="false">快联金融助人贷借款利率为年化15%。分365期等额本息每期31.5元365天还清。
+        其中账户管理费为每日28.5元账户管理费包括身份验证费、手机验证费、银行验证费、征信审核费、信息发布费、撮合服务费、电话客服费等组成。</string>
+    <string name="rate_query_tp2" formatted="false">提前还款一次性全额还款为借款金额，对已还款金额作违约处理</string>
+
+    <string name="choice_province">选择省</string>
+    <string name="choice_city">选择市</string>
+    <string name="choice_district">选择区县</string>
+    <string name="my_info">我的信息</string>
+    <string name="my_work_info">职位信息</string>
+    <string name="my_work_tp1">请提交您的详细工作信息，包括工作单位、所在岗位、办公电话、公司地址等</string>
+    <string name="my_operator_info">手机运营商</string>
+    <string name="my_operator_tp1">手机运营商认证需先上传您的通讯录，此信息用于查询个人征信，承若保护用户隐私</string>
+    <string name="my_operator_tp2">请确保此手机已实名登记</string>
+    <string name="my_operator_tp3">1、请谨慎输入，多次输错可能导致被锁
+        \n2、开始认证就不能中断，过程比较耗时，请耐心等待
+		\n3、移动用户，发送“MMCZ”至10086重置服务密码
+		\n4、联通用户，发送“MMCZ#6位新密码”至10010重置服务密码
+		\n5、电信用户，发送“MMCZ”至10001重置服务密码</string>
+    <string name="my_order_info">账单信息</string>
+    <string name="my_order_tp1">请提交借记卡网银帐号信息</string>
+    <string name="my_order_tp11">请提交信用卡网银帐号信息</string>
+    <string name="my_order_tp2">数据将加密传输，请放心填写</string>
+    <string name="my_order_tp3">网银帐号信息</string>
+    
+     <string name="my_fund_info">住房公积金认证</string>
+     <string name="fund_city_list">选择城市</string>
+     <string name="fund_province_list">选择省</string>
+     <string name="my_fund_tp1">1、请谨慎输入，多次输错可能导致帐号被锁
+         \n2、开始认证就不能中断，过程比较耗时，请耐心等待
+         \n3、个人公积金查询初始密码为111111</string>
+      
+     <string name="my_taobao_info">淘宝认证</string>
+     <string name="my_jingdong_info">京东认证</string>
+     <string name="my_huabei_info">支付宝认证</string>
+     <string name="my_huabei_tp1">请提交支付宝帐号信息</string>
+     <string name="my_huabei_tp2">注：审核期间请关闭支付宝刷脸功能,谢谢合作</string>
+     <string name="my_huabei_tp3">正在认证，大概需要2分钟，请耐心等待，不要离开这个页面</string>
+    
+    <string name="loan">借款</string>
+    <string name="repay_need_know">续借手续费包含借款利息和管理费，与首次借款申请费用相同，借款结束当天申请只需支付手续费，逾期申请需支付手续费和滞纳金。</string>
+    <string name="loan_rule">三方借款协议</string>
+    
+    <string name="phone_authen">手机运营商认证</string>
+    <string name="phone_authen_tp1">登录时间大约耗时2分钟\n认证过程时间较长，请耐心等待</string>
+    
+    <string name="pay_method_alipay">支付宝支付</string>
+    <string name="pay_method_alipay2">推荐已开通支付宝支付的用户使用</string>
+    <string name="pay_method_wuka">无卡支付</string>
+    <string name="pay_method_wuka2">银行卡支付</string>
+    <string name="pay_method_wxpay">微信支付</string>
+    <string name="pay_method_choose_title">请选择支付方式</string>
+    <string name="credit_dai_fu">信用卡代还</string>
+    <string name="credit_dai_fu_pay">支付</string>
+    <string name="credit_dai_fu_order">代还记录</string>
+    
+    <string name="recovery_notice1">1、山寨机、高仿机不回收</string>
+    <string name="recovery_notice2">2、屏幕锁未解, iCloud账户未注销不回收</string>
+    <string name="recovery_notice3">拒收并退回以上两种手机, 您需承担双向费用</string>
+    <string name="recovery_unlock1">Q:  iPhone如何取消开机密码</string>
+    <string name="recovery_unlock2">A:  设置 > Touch ID和密码 > 点击关闭密码</string>
+    <string name="recovery_unlock3">Q:  iPhone如何关闭iCloud</string>
+    <string name="recovery_unlock4">A:  设置 > 进入iCloud > 注销 > 从我的iPhone删除 > 输入密码 > 删除</string>
+    <string name="recovery_cue1">请您在邮寄手机前:</string>
+    <string name="recovery_cue2">1、备份通讯录、短信等重要数据</string>
+    <string name="recovery_cue3">2、解除屏锁密码锁、ID账号锁，并恢复出厂设置</string>
+    <string name="recovery_cue4">3、确保无SIM卡或TF卡遗留在手机中</string>
+    
+    <string name="black_list_show">账户存在风险，暂时不能认证！</string>
+    
+    <string name="loan_tp4">您是首次申请，为提高个人信用，需上传手机号，请选择亲属关系：</string>
+    <string name="late_fee_tp">提示：滞纳金计算请到“首页”的“费率查询”查看</string>
+    <string name="late_fee_tp2">增加或减免滞纳金</string>
+    <string name="extension_qr_code">我要推广</string>
+    <string name="my_commis">我的奖励金</string>
+    <string name="my_commis_tp1" formatted="false">1、分享页面给好友，好友通过邀请页下载草莓商城APP并注册；
+\n2、被邀请好友手首次购买手机且过了7天无理由退换货后，您将获得66元现金红包
+\n3、现金红包可在“我的奖励金”查询，满50元即可提现，2个工作日到账，提现前请先实名并绑定银行卡</string>
+    
+    <string name="loan_tp1">提示：
+\n1、每次借款至少100元且为100元的整数倍，最快20分钟到达您绑定的收款银行卡
+\n2、如已有借款，请先还完款后，才能再次借款
+</string>
+    <string name="loan_tp2">注：一次性全额还款为借款金额，对已还款金额作为违约金处理</string>
+
+   <string name="loan_tp3" formatted="false">
+        一、借款费用说明
+
+\n\n周周钱包借款利息为固定利率，日利率为万分之3。此外周周钱包对每笔成功借款收取服务费用，包括手机验证费、银行卡验证费、身份验证费、账户管理费、征信审核费、信息发布费、撮合服务费、平台运营费、电话客户服务费、客户端使用费及逾期准备金计提成本。借款利息及服务费合计为：28.6元每千元每天，由周周钱包在放款时一次性扣除。
+
+\n\n二、逾期费用说明
+
+\n\n未及时还款会产生相应的逾期手续费。
+\n滞纳金：10元/笔。
+
+\n\n逾期手续费：自应还款日起每日按借款金额的3%计收。逾期超过3日，则应每日按借款金额的5%计收。
+
+\n\n三、友情提示
+
+\n\n1.如有借款，请登录后阅读：《三方借款协议》；
+\n2.请保持良好的还款习惯，否则会影响您在周周钱包的信用额度、审核通过率及在芝麻信用等平台的信用评分。
+
+\n\n三方协议
+\n本借款协议（下称“本协议”）由以下各方通过周周钱包平台以电子文本形式制成，于年月日签署，各方均承认本电子合同的法律效力。
+
+\n\n甲方（资金出借方）：__________
+\n身份证号：__________
+\n甲方手机号码：__________
+
+\n\n乙方（资金借入方）：__________	
+\n身份证号：__________	
+\n乙方手机号码：__________
+
+\n\n丙方（服务提供商）： 宁波欣珺捷商务信息咨询有限公司 
+\n实际经营地：浙江省宁波海曙区丽园北路755号1540室
+
+\n\n鉴于：
+
+\n\n1. 甲方、乙方均为年满18周岁具有完全民事行为能力的自然人，因乙方有资金周转需求，通过丙方平台发出借款申请，甲方通过丙方了解到上述情况并同意出借相应款项，甲、乙双方有意成立借贷关系。
+\n2. 丙方是一家在浙江省宁波市海曙区合法成立并有效存续的有限责任公司，公司名称为：宁波欣珺捷商务信息咨询有限公司（以下简称“周周钱包”），拥有APP软件周周钱包等经营权，提供投资信息和信用居间咨询，为交易提供信息服务、企业管理服务、广告信息发布、商务信息咨询服务资质。
+\n3. 甲乙双方确认本协议是通过周周钱包平台签署。
+
+\n\n基于上述事实，甲乙双方就借款事宜达成协议如下：
+
+\n\n一、借款及偿还方式
+
+\n\n1.1 甲方资金来源如下：
+
+\n\n甲方的收支账户为：
+\n户名（与甲方姓名一致）：__________
+\n开户行：__________
+\n账号：__________
+
+\n\n1.2 乙方承诺借款不用于炒股、买卖期货等及法律所禁止的不合法用途。
+
+\n\n1.3 乙方的收支账户为：
+\n户名（与乙方姓名一致）：__________	
+\n开户行：__________	
+\n账号：__________
+
+\n\n1.4 借款本金：人民币（大写） __________整（人民币元整）。
+\n\n1.5 借款期限：自 __________至 __________止； 还款日期为__________， 共计__________天。
+\n\n1.6 乙方确认：
+
+\n\n1.6.1 一旦乙方经由周周钱包平台提出借款申请，即同意并不可撤销地授权周周钱包向合法经营的第三方查询或核实乙方的个人信用，周周钱包可使用乙方提供的所有信息对乙方的信用进行全方位的核查，包括但不限于：设备mac、imei 、idfa、qq号、微信号、app列表、消费记录、通讯录、通讯记录、短信、照片目录等，以实现借贷双方的信息同步及信息透明化，保障借贷资金的安全；同意与业务相关的第三方对本人/本单位的相关交易信息进行收集并在与业务相关的第三方之间共享；同时同意周周钱包将查询获取的信息进行保存、整理、加工。但法律、法规、监管政策禁止查询的除外。
+
+\n\n1.6.2 就本次借款成功的，乙方依照以下标准应向周周钱包支付服务费，服务费由手机验证费、银行卡验证费、身份验证费、账户管理费、征信审核费、信息发布费、撮合服务费、平台运营费、电话客户服务费、客户端使用费、逾期准备金计提成本等组成。服务费计付标准具体为：借款金额1000元、1500元、2000元、2500元，借款周期7天，依照借款本金的2.84%/天计收，逾期罚息为3%/天，滞纳金50元/笔。逾期不满3日的逾期罚息每日按借款金额的3%计收；逾期超过3日的逾期罚息每日按借款金额的5%计收。
+
+\n\n1.6.3 乙方向甲方支付借款利息的日利率为万分之三。
+\n\n1.7 乙方还款金额为借款本金加上依照本协议1.5、1.6标准计付相应服务费的总额：人民币（大写） __________	整[人民币（小写）__________元整]， 还款日期为__________。
+\n\n1.8 乙方须确保收支账户为乙方名下合法有效的银行账户，乙方变更账户时必须向周周钱包申请签署《借款人客户信息变更书》并经周周钱包认可后方可变更。如因乙方未及时书面通知周周钱包而引发的还款延迟，乙方应按照协议内容，支付逾期手续费。
+
+\n\n二、各方权利义务
+
+\n\n2.1 甲方权利义务：
+\n\n2.1.1 甲方承诺向周周钱包提供的信息及时、合法、真实、有效，用于出借的资金来源合法且符合周周钱包的要求。
+\n\n2.1.2 甲方同意以网络页面点击确认或其他方式（包括但不限于签字或签字盖章确认等方式）签订本协议，并不以此为由拒绝履行本协议项下的义务，即便在签订时本协议并没有乙方的信息、借款基本信息、签订日期信息等。甲方同意以前述方式签订本协议后即视为不可撤销及变更地授权周周钱包平台根据最终撮合结果自主生成前述信息，且未经周周钱包及乙方的同意，甲方不得否认协议项下债权债务关系及/或以任何方式撤回、撤销本协议。
+
+\n\n2.1.3 甲方理解并同意，授权周周钱包在本协议项下（包括但不限于：后续风险管理或提供的综合化服务等），有权采集、处理、传递和应用甲方各项资料，并同意可以通过相关征信机构个人信用信息基础数据库查询甲方各类信息，包括但不限于信用报告中的身份、职业和居住地址等个人基本信息，以及甲方在个人贷款、各类信用卡和对外担保等信用及商业活动中形成的交易记录、个人信贷交易信息及公共费用缴纳、违法违规等非银行信用信息。并同意周周钱包将甲方的个人基本信息、个人信贷交易信息，以及其他相关信用信息报送相关征信机构个人信用信息基础数据库，并且同意征信服务有限公司可将本授权书提及到的上述信息向其他机构传递、提供、使用。
+
+\n\n2.2 乙方权利义务：
+
+\n\n2.2.1 乙方承诺向周周钱包提供的信息及时、合法、真实、有效。
+\n\n2.2.2 乙方同意以网络页面点击确认或其他方式（包括但不限于签字或签字盖章确认等方式）签订本协议，并不以此为由拒绝履行本协议项下的义务，即便在签订时本协议并没有甲方的信息、借款基本信息、签订日期信息等。乙方同意以上述签订方式签订本协议后即视为不可撤销及变更地授权周周钱包平台根据最终撮合结果自主生成前述信息，且未经周周钱包及甲方的同意，乙方不得否认本协议项下债权债务关系或以任何方式撤回、撤销本协议。
+
+\n\n2.2.3 乙方理解并同意，授权周周钱包在本协议项下（包括但不限于：后续风险管理或提供的综合化服务等），有权采集、处理、传递和应用乙方各项资料，并同意可以通过相关征信机构个人信用信息基础数据库查询乙方各类信息，包括但不限于信用报告中的身份、职业和居住地址等个人基本信息，以及乙方在个人贷款、各类信用卡和对外担保等信用及商业活动中形成的交易记录、个人信贷交易信息及公共费用缴纳、违法违规等非银行信用信息。并同意周周钱包将乙方的个人基本信息、个人信贷交易信息，以及其他相关信用信息报送相关征信机构个人信用信息基础数据库，并且同意征信服务有限公司可将本授权书提及到的上述信息向其他机构传递、提供、使用。
+\n\n2.2.4 乙方应按照本协议第1.6条的约定向周周钱包支付服务费。
+
+\n\n2.3周周钱包权利义务：
+
+\n\n2.3.1 乙方所获借款可能会来自于多位出借人，周周钱包或第三方支付机构会按照出借人列表所明示的出借比例对该笔还款为相应的出借人进行还款分配。
+
+\n\n三、结算和支付方式
+
+\n\n乙方应在签署本协议的同时授权周周钱包指定的有支付结算资质的第三方支付机构，出具委托手续并签订《委托扣款授权书》。
+
+\n\n3.1 甲方同意授权周周钱包发出指令，由具有支付结算资质的第三方支付机构按照下列规定划转支付款项给乙方。
+\n\n3.1.1 一次划转：甲方于前将借款金额存入1.1条约定的甲方收支账户内，并授权周周钱包发出指令由具有支付结算资质的第三方支付机构于前将借款金额全部划入乙方在1.3条约定的乙方收支账户内。第三方账户的转账费用为2元/笔/最高3000元，由乙方承担，且乙方同意上述转账费用从借款本金中直接扣除。
+\n\n3.2 乙方同意授权周周钱包发出指令由具有支付结算资质的第三方支付机构按照1.7条约定的金额和时间划转支付款项给甲方。乙方于还款期内前将还款金额存入1.3条约定的乙方收支账户内。第三方账户的转账费用为2元/笔/最高3000元，由周周钱包承担。
+\n\n3.3 若乙方未按照本协议约定在还款期限之前向该收支账户存入还款金额或存入金额不足，致使还款逾期的，甲、乙双方均同意并确认：自乙方还款逾期之日起，该等债权即时转让予周周钱包，且无需甲方再行通知乙方。自此。周周钱包有权以其自身名义向乙方追讨该等欠款金额及本协议约定的违约责任。
+
+\n\n四、提前还款
+
+\n\n4.1周周钱包不建议乙方提前还款，乙方提前还款的，其所交纳服务费不予退还。
+
+\n\n五、违约责任
+
+\n\n5.1 若乙方未按照本协议约定在还款期限之前向该收支账户存入还款金额或存入金额不足的，即构成违约，并向周周钱包承担以下违约责任：
+\n\n5.1.1 自应还款日起按每日借款金额的0.5%收取逾期手续费，并支付10元/笔的滞纳金。
+\n\n5.1.2 逾期超过15日，乙方仍未实际还款的，则应每日借款金额的1.5%计收逾期手续费。且周周钱包有权获取并使用乙方通过其他途径业已公开的所有关联信息予以催收。
+\n\n5.1.3 逾期超过15日，周周钱包有权对乙方提供的及周周钱包自行收集的乙方个人信息和资料编辑入网站黑名单，并将该黑名单对第三方披露，并与任何第三方数据共享，以便周周钱包和周周钱包委托的第三方催收逾期借款及对乙方的其他申请进行审核之用，由此因第三方的行为可能造成乙方的损失，周周钱包不承担法律责任。
+\n\n5.1.4 乙方不可撤销地同意并授权：逾期超过60日的，周周钱包有权委托银行及/或第三方支付机构从包括但不限于接受借款的银行账户、以及归属乙方名下的其他任意银行账户内，以乙方所欠的本息及逾期费用划付所欠款项。上述银行账户余额不足的，周周钱包有权委托银行及/或第三方支付机构继续划付直至乙方还清所欠款项为止，由此造成乙方的不便或其他损失的，周周钱包不承担法律责任。在乙方欠款未清之前，该等委托划付还款方式不影响周周钱包采取其他方式向乙方催收欠款。
+\n\n5.2 守约方为追回损失而支付的包括但不限于律师费、诉讼费、公证费、交通通讯费等费用，由违约方承担。
+
+\n\n六、税务
+
+\n\n协议各方在资金出借、转让过程产生的税费，自行向主管税务机关申报、缴纳。
+
+\n\n七、通知及送达
+
+\n\n7.1 在本协议有效期内，因法律、法规、政策的变化，或任一方丧失履行本协议的资格和/或能力，影响本协议履行的，该方应承担在合理时间内通知其他各方的义务。
+\n\n7.2 协议各方同意，与本协议有关的任何通知，以书面方式送达方为有效。书面形式包括但不限于：传真、快递、邮件、电子邮件。上述通知应当被视为在下列时间送达：以传真发送，为该传真成功发送并由收件方收到之日；以快递或专人发送，为收件人收到该通知之日；以挂号邮件发送，为发出后7个工作日；以电子邮件发送，以电子邮件成功发出之日。
+
+\n\n八、协议的变更、解除和终止
+
+\n\n除本协议或法律另有规定外，协议的变更、解除和终止以下列约定为准。
+
+\n\n8.1 本协议的任何修改、变更应经协议各方另行协商，并就修改、变更事项共同签署书面协议后方可成立。
+\n\n8.2 本协议在下列情况下解除：
+\n\n8.2.1 经各方协商一致解除。
+\n\n8.2.2 任何一方发生违约行为并在守约方向其发出书面通知之日起 15 日内不予履行合同的，或累计发生两次或两次以上违约行为的，守约方有权单方面通知解除本协议。
+\n\n8.2.3 因法律规定的不可抗力造成本协议无法继续履行的。
+\n\n8.3 提出解除协议的一方，应当以书面形式通知其他各方。
+\n\n8.4 本协议解除后，不影响守约方要求违约方支付违约金并赔偿损失的权利。
+\n\n8.5 除本协议另有约定外，非经本协议各方协商一致并达成书面协议，任何一方不得转让其在本协议或本协议项下的全部或部分权利义务。
+\n\n8.6 如果一方出现出借资产的继承或赠与等权利变更需要对方协助办理的，必须由主张权利的继承人或受赠人等相关人员向对方出示经国家权威机关（公证处或使领馆）公证认证的继承或赠与等权利归属证明的文件，对方确认后方予协助办理。由此产生的相关税费，由主张权利的一方负责向相关税务机关申报、缴纳。
+
+\n\n九、争议解决
+
+\n\n9.1 本协议的效力、解释以及履行适用中华人民共和国的法律。
+\n\n9.2 本协议各方因本协议履行发生争议的，均应首先通过友好协商的方式解决，协商不成的，任何一方均可把争议提交周周钱包实际经营所在人民法院即宁波市江东区人民法院诉讼管辖。
+
+\n\n十、保密条款
+
+\n\n10.1 保密人员：任何接触本协议约定的保密信息的人员，均为保密人员。
+\n\n10.2 保密信息的范围：
+\n\n10.2.1 保密信息：指信息提供方向接受方提供的，属于提供方或其股东及其他关联公司所有或专有的，或提供方负有保密义务的有关第三方的资料及所有在信息载体上明确标示“保密”的材料和信息。需保密材料包括但不限于：合同文本正本、副本、附件、复印件及记载的内同，服务项目、收费标准，经营管理模式，客户信息等非公开的、保密的或专业的信息和数据。
+
+\n\n10.2.2 保密信息不包括下列信息：
+\n\n10.2.2.1 在接受保密信息之时，接受方已经通过其他来源获悉的、无保密限制信息。
+\n\n10.2.2.2 一方通过合法行为获悉已经或即将公诸于众的信息。
+\n\n10.2.2.3 根据政府要求、命令和司法条例所披露的信息。
+\n\n10.3 保密义务：
+\n\n10.3.1 对保密信息谨慎、妥善持有，并严格保密，没有提供方事先书面同意，不得向任何第三方披露。
+\n\n10.3.2 接受方仅可为双方合作之必需，将保密信息披露给其指定的第三方公司，并且该公司应首先以书面形式承诺保守该保密信息。
+\n\n10.3.3 接受方仅可为双方合作业务之必需，将保密信息披露给其直接或间接参与合作事项的管理人员、职员、顾问和其他雇员（统称“有关人员”），但应保证该类有关人员对保密信息严格保密。
+\n\n10.3.4 若具有权力的法庭或其他司法、行政、立法机构要求一方披露保密信息，接受方将（1）立即通知提供方此类要求；（2）若接受方按上述要求必须提供保密信息，接受方将配合提供方采取合法及合理的措施，要求所提供的保密信息能得到保密的待遇。
+\n\n10.3.5 若接受方或有关人员违反本协议的保密义务，接受方须承担相应责任，并赔偿提供方由此造成的损失。
+\n\n10.4 保密期限：本条规定的保密期限为本协议有效期内和有效期满后的5年。
+
+\n\n十一、附则
+
+\n\n11.1 本协议附件作为本协议的有效组成部分，与本协议效力一致。
+\n\n11.2 本协议的电子件、传真件、复印件、扫描件等经双方确认的有效复本的效力与本协议原件效力一致。
+\n\n11.3 双方确认，本协议的签署、生效和履行以不违反中国的法律法规为前提。如果本协议中的任何一条或多条违反适用的法律法规，则该条将被视为无效，但该无效条款并不影响本协议其他条款的效力。
+\n\n11.4 本协议任一条款被认定无效的，不影响本合同项下其他条款的效力。
+\n\n11.5 本协议自协议各方在线确认后即生效，本协议的电子文件具有法律效力。
+
+\n\n【以下无正文】
+
+\n\n请在本页进行签署，并确认已经清楚知晓并了解本合同的所有相关内容。
+
+\n\n甲方：____________________      日期：__________
+\n\n乙方：____________________      日期：__________
+\n\n丙方： 宁波欣珺捷商务信息咨询有限公司   日期：__________
+\n\n   
+   </string>
+    
+        <!-- 网络错误 -->
+    <string name="A1">努力加载中...</string>
+    <string name="A2">服务出错啦</string>
+    <string name="A3">请求超时啦</string>
+    <string name="A4">服务找不到啦(001)</string>
+    <string name="A5">服务连不上啦(002)</string>
+    <string name="A6">网络请求失败</string>
+    <string name="A7">网络不给力</string>
+    
+    <!-- 登录，注册，修改密码，找回密码 -->
+    <string name="B1">请输入手机号码</string>
+    <string name="B2">手机号码格式不正确，请重新输入</string>
+    <string name="B21">电话或手机号码格式不正确，请重新输入</string>
+    <string name="B3">请输入密码，至少6位</string>
+    <string name="B4">请输入确认密码</string>
+    <string name="B5">密码与确认密码不一致，请重新输入</string>
+    <string name="B6">请输入旧密码</string>
+    <string name="B7">请输入新密码，至少6位</string>
+    <string name="B8">新密码不能和旧密码相同</string>
+    <string name="B9">请输入验证码</string>
+    <string name="B10">注册成功，请登录</string>
+    <string name="B11">修改成功，请登录</string>
+    <string name="B12">旧密码错误</string>
+    <string name="B13">用户未登录，请登录</string>
+    
+    <!-- 实名认证 -->
+    <string name="C1">请输入真实姓名</string>
+    <string name="C2">真实姓名中有特殊符号，请去掉</string>
+    <string name="C3">请输入6位支付密码</string>
+    <string name="C4">请输入确认支付密码</string>
+    <string name="C5">两次密码不一致，请重新输入</string>
+    <string name="C6">请输入原密码</string>
+    <string name="C7">请输入新密码</string>
+    <string name="C8">请输入确认密码</string>
+    <string name="C9">请上传身份证正面照片</string>
+    <string name="C10">请上传身份证背面照片</string>
+    <string name="C11">请上传手持身份证照片</string>
+    <string name="C12">头像上传成功</string>
+    <string name="C13">头像上传失败，请重试</string>
+    <string name="C14">上传的图片文件格式有误，请重试</string>
+    <string name="C15">提交成功，正在审核中...</string>
+    <string name="C16">正在提交中</string>
+    <string name="C17">该信用卡已经认证成功</string>
+    <string name="C18">该信用卡还在认证中</string>
+    <string name="C19">该信用卡已经认证失败</string>
+    <string name="C20">请上传信用卡正面照片</string>
+    <string name="C21">请上传持卡人手持信用卡照片</string>
+    <string name="C22">认证照片未修改，请根据提示重新上传并提交</string>
+    <string name="C23">请上传借记卡正面照片</string>
+    <string name="C24">请上传借记卡反面照片</string>
+    <string name="C25">该借记卡已绑定</string>
+    <string name="H2">当前用户尚未实名认证，请先去实名认证</string>
+    <string name="H3">当前用户尚未通过银行卡认证，请先去认证</string>
+    
+    <!-- 绑定银行卡 -->
+    <string name="F1">请先选择银行</string>
+    <string name="F2">请输入检索关键字</string>
+    <string name="F3">请输入正确银行卡卡号</string>
+    <string name="F4">请获取银行卡卡号</string>
+    <string name="F5">未登录用户无法绑定银行卡，是否登录？</string>
+    <string name="F6">银行卡绑定成功</string>
+    <string name="F7">未登录用户无法解除银行卡绑定，是否登录？</string>
+    <string name="F8">解除银行卡绑定成功</string>
+    <string name="F9">绑定超时，请重试</string>
+    <string name="F10">请选择开户支行</string>
+    <string name="F11">持卡人姓名为空，无法绑定银行卡</string>
+    <string name="F12">两次输入的卡号不一致，请重新输入</string>
+    <string name="my_bank_card">我的银行卡</string>
+    <string name="binding_bank_card">绑定银行卡</string>
+    <string name="bank_cards">银行卡片</string>
+    <string name="choice_bank">选择银行</string>
+    <string name="bank_choice">银行选择</string>
+    <string name="bank_branch_choice">银行网点选择</string>
+    <string name="choice_bank_branch">请输入支行或分行检索,如:鄞州支行</string>
+    <string name="bank_card_info">银行卡信息:</string>
+    <string name="bank_card_no">卡号:</string>
+    <string name="bank_card_password">密码:</string>
+    
+    <string name="no_data">暂无数据</string>
+    
+    <string name="zmxy_label">芝麻信用</string>
+    
+    <string name="manage">账户管理</string>
+    <string name="delivery_address">收货地址</string>
+    <string name="modify_address">收货地址管理</string>
+    <string name="i_phone">手机列表</string>
+    <string name="phone_details">手机详情</string>
+    <string name="choice_phone_type">选择手机型号</string>
+    <string name="phone_assess">手机评估</string>
+    <string name="assess_result">评估结果</string>
+    <string name="reclaim_order">回收订单</string>
+    <string name="logistics_info">物流信息</string>
+    <string name="recovery_rule">草莓商城回收协议</string>
+    <string name="express_list">快递列表</string>
+    <string name="promote_amount">额度明细</string>
+    <string name="register_rule">产品服务协议</string>
+	<string name="deal_rule">小飞鱼售后回租协议</string>
+    <string name="credit_line">信用额度</string>
+    <string name="recommend">推荐有奖</string>
+    <string name="feedback">用户反馈</string>
+    <string name="more_old_phone">更多>></string>
+    <string name="order_all">订单</string>
+    <string name="order_true">下单</string>
+    <string name="order_repay">还款中心</string>
+    <string name="order_center">订单中心</string>
+    <string name="order_details">订单详情</string>
+    <string name="order_status">订单状态</string>
+    <string name="order_return">退货申请</string>
+    <string name="order_pay_back">还款账单明细</string>
+    <string name="order_lease">租赁申请</string>
+    <string name="order_renew">续租</string>
+    <string name="order_redeem">赎回</string>
+    <string name="order_bill">清单</string>
+    <string name="order_record">支付记录列表</string>
+    <string name="order_record_details">支付记录详情</string>
+    
+    
+    <!-- 百度定位 -->
+    <string name="location_gps_off">为了您方便贷款,请在设置中开启定位服务</string>
+    <string name="location_net_error">网络异常，定位失败</string>
+    <string name="location_failure">gps定位失败</string>
+    <string name="location_gps_ing">gps定位中</string>
+    <string name="location_gps_invalid">所选城市尚未开通贷款功能</string>
+    
+        <!-- 输入限制 -->
+    <string name="register_name_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="email_digits">.@0123456789abcdefghijklmnopqrstuvwxyz</string>
+    <string name="invitecode_digits">0123456789abcdefghijklmnopqrstuvwxyz</string>
+    <string name="invitecode_digits2">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="express_digits">0123456789ABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="id_cardno_digits">0123456789xX</string>
+    <string name="tel_digits">-0123456789</string>
+
+    <string name="vertify_access">验证通过,耗时%d毫秒</string>
+    <string name="vertify_failed">验证失败,还剩%d次机会</string>
+    
+</resources>

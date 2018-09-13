@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="RtlSymmetry" >
+
+   <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@android:color/darker_gray" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_my" >
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_share"/>
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rlUserInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/iv_share" >
+
+                    <com.il360.xiaofeiyu.view.CircleImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginStart="50dp"
+                        android:background="@color/main_logo"
+                        android:contentDescription="@string/app_name"
+                        app:mBorderColor="@color/white"
+                        app:mBorderWidth="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/userImage"
+                        android:layout_toRightOf="@+id/userImage"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/loginName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/isVerified"
+                        android:layout_width="62dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="20dp"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlNoLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/iv_share"
+                    android:visibility="gone" >
+
+                    <com.il360.xiaofeiyu.view.CircleImageView
+                        android:id="@+id/noLoginImage"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:contentDescription="@string/app_name"
+                        app:mBorderColor="@color/white"
+                        app:mBorderWidth="1dp" />
+
+                    <TextView
+                        android:id="@+id/tvLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/noLoginImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_corners_transparent_white"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="22dp"
+                        android:paddingRight="22dp"
+                        android:paddingTop="8dp"
+                        android:text="立即登录"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="支付记录列表"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/ic_login_more_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="账户管理"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/ic_login_more_right" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tvClearItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="清理缓存"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                 <TextView
+                    android:id="@+id/tvEditClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/ivClearRight"
+                    android:layout_toStartOf="@+id/ivClearRight"
+                    android:textColor="@color/text_gray"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivClearRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/ic_login_more_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/about_us"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivAboutUsRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/ic_login_more_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFeedback"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="用户反馈"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvEditOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/ivOrderRight"
+                    android:layout_toStartOf="@+id/ivOrderRight"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivOrderRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/ic_login_more_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlServiceNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tvServiceNumItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="联系我们"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tvEditServiceNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/text_red"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlQQNum1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tvQQNum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="QQ客服"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvEditQQNum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/service_qq1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+	       <TextView
+	          android:id="@+id/tvLoginOut"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_marginBottom="20dp"
+	          android:layout_marginLeft="40dp"
+	          android:layout_marginRight="40dp"
+	          android:layout_marginTop="30dp"
+	          android:background="@drawable/corners"
+	          android:gravity="center"
+	          android:paddingBottom="10dp"
+	          android:paddingTop="10dp"
+	          android:text="退出登录"
+	          android:textColor="@color/black"
+	          android:textSize="18sp" />
+
+			<TextView
+        	  android:layout_width="match_parent"
+        	  android:layout_height="100dp"
+        	  android:layout_gravity="center_horizontal"
+        	  android:gravity="center"
+        	  android:textColor="@color/white"/>
+        </LinearLayout>
+   </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

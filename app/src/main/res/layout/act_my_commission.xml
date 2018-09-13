@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@android:color/darker_gray"
+        ptr:ptrMode="both" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffd927"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tvText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="可提现金额(元)"
+                    android:textColor="#9d6100"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTotalCommis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvText1"
+                    android:layout_centerHorizontal="true"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTotalCommis"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已提现"
+                        android:textColor="#9d6100"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvLastMonthCommis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="#9d6100"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/rgCommisList"
+                android:layout_width="220dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/tab_express1"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbCommisGet"
+                    android:layout_width="0dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="奖励金记录"
+                    android:textColor="@drawable/selector_text_maincyan" />
+
+                <RadioButton
+                    android:id="@+id/rbCommisApply"
+                    android:layout_width="0dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="提现记录"
+                    android:textColor="@drawable/selector_text_maincyan" />
+            </RadioGroup>
+
+            <com.il360.qianjibian.view.ListViewForScrollView
+                android:id="@+id/commisList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" >
+            </com.il360.qianjibian.view.ListViewForScrollView>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

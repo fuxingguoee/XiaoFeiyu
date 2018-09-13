@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rlPhoneType"
+        android:layout_width="100dp"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tvTypeName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/tvLineRed"
+            android:layout_toRightOf="@+id/tvLineRed"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="苹果"
+            android:textColor="@color/text_red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvLineRed"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_red" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/phoneList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_toEndOf="@+id/rlPhoneType"
+        android:layout_toRightOf="@+id/rlPhoneType" >
+    </ListView>
+
+</RelativeLayout>

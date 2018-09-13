@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.il360.xiaofeiyu">
+
+
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <!-- 必选 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--  腾许cos  -->
+    <!--     <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+
+    <!-- 连连支付-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- 相机-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 有盾SDK所需权限声明 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- 百度定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- 友盟分享 -->
+    <!--     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <!-- 魔蝎  -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+
+
+    <application
+        android:name="com.il360.xiaofeiyu.common.MyApplication"
+        android:hardwareAccelerated="false"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="小飞鱼"
+        android:roundIcon="@mipmap/ic_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/global_bg">
+
+        <!--7.0拍照相册问题-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="UZuPd08uqzFcGujrRQ33mmSZKBfBKooA" />
+
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.WelcomeActivity_"
+            android:hardwareAccelerated="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.main.MainActivity_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.main.UrlToWebActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.main.TestActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.RegisterActivity_"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.SliderActivity_"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.home.CheckResultActivity_"
+            android:label="@string/check_result"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.home.CheckActivity2_"
+            android:label="@string/check"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.home.GuideActivity_"
+            android:label="@string/guide"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.LogisticsInfoActivity2_"
+            android:label="@string/logistics_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.LoginActivity_"
+            android:label="@string/login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.GetBackPasswordActivity_"
+            android:label="@string/get_back_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.PasswordModifyActivity_"
+            android:label="@string/login_CPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.VerifiedActivity_"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/verified_user"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.VerifiedHelpActivity_"
+            android:label="@string/help"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.MyInfoActivity_"
+            android:label="@string/my_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.VerifiedFinishActivity_"
+            android:label="@string/verified_user"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.SettingActivity_"
+            android:label="@string/setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.AboutUsActivity_"
+            android:hardwareAccelerated="false"
+            android:label="@string/about_us"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.AccountPictureActivity_"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/post_touxiang"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" />
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.BindingBankCardActivity_"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/binding_bank_card"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.BankNameListActivity_"
+            android:label="@string/bank_choice"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.BranchBankNameListActivity_"
+            android:label="@string/bank_branch_choice"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.MyBankCardActivity_"
+            android:label="@string/my_bank_card"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.MyCommissionActivity_"
+            android:label="@string/my_commis"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.ManageActivity_"
+            android:label="@string/manage"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.DealPwdModifyActivity_"
+            android:label="@string/deal_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.DeliveryAddressActivity_"
+            android:label="@string/modify_address"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.AddressModifyActivity_"
+            android:label="@string/delivery_address"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.MyCreditLineActivity_"
+            android:label="@string/credit_line"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.RecommendActivity_"
+            android:label="@string/recommend"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.user.FeedbackActivity_"
+            android:label="@string/feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.recovery.PhoneTypesActivity_"
+            android:label="@string/choice_phone_type"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.recovery.PhoneAssessActivity_"
+            android:label="@string/phone_assess"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.recovery.AssessResultActivity_"
+            android:label="@string/assess_result"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.recovery.ReclaimOrderActivity_"
+            android:label="@string/reclaim_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.recovery.ReclaimTypeActivity_"
+            android:label="@string/reclaim_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.recovery.LogisticsInfoActivity_"
+            android:label="@string/logistics_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.recovery.ExpressListActivity_"
+            android:label="@string/express_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.recovery.PromoteAmountActivity_"
+            android:label="@string/promote_amount"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.OrderActivity_"
+            android:label="@string/order_all"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.RepaymentActivity_"
+            android:label="@string/order_repay"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.OrderSatusActivity_"
+            android:label="@string/order_status"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.ReturnGoodsActivity_"
+            android:label="@string/order_return"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.PayBackActivity_"
+            android:label="@string/order_pay_back"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.NotPayBackActivity_"
+            android:label="@string/order_pay_back"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.DealRuleActivity_"
+            android:label="@string/deal_rule"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.OrderApplicationActivity_"
+            android:label="@string/order_lease"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.RenewActivity_"
+            android:label="@string/order_renew"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.RedeemActivity_"
+            android:label="@string/order_redeem"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.OrderDetailsActivity_"
+            android:label="@string/order_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.BillActivity_"
+            android:label="@string/order_bill"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.RecordActivity_"
+            android:label="@string/order_record"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.order.RecordDetailsActivity_"
+            android:label="@string/order_record_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.address.ProvinceActivity_"
+            android:label="@string/choice_province"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.address.CityActivity_"
+            android:label="@string/choice_city"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.address.DistrictActivity_"
+            android:label="@string/choice_district"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.mydata.AutoVerifiedActivity_"
+            android:label="@string/verified_user"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.mydata.OperatorInfoActivity_"
+            android:label="@string/my_operator_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.mydata.OrderBankListActivity_"
+            android:label="@string/choice_bank"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.mydata.HuaBeiActivity_"
+            android:label="@string/my_huabei_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.mydata.TaoBaoActivity_"
+            android:label="@string/my_taobao_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.home.FundProvinceActivity_"
+            android:label="@string/fund_province_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.home.FundCityActivity_"
+            android:label="@string/fund_city_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.home.FundAuthenActivity_"
+            android:label="@string/my_fund_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.home.PhoneAuthenActivity_"
+            android:label="@string/phone_authen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO" >
+        </activity>
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.home.SignNameActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <!-- qq分享 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106698792" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信分享 -->
+        <activity
+            android:name="com.il360.xiaofeiyu.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 生产环境友盟 -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5b6a990bf43e48352800013e" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="umeng" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="1c7f65b25ca48ff96f1a4dd568b51d4d" >
+        </meta-data>
+
+        <activity
+            android:name="com.il360.xiaofeiyu.activity.home.PayActivity_"
+            android:label="@string/credit_dai_fu_pay"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO"
+            android:exported="true"
+            android:launchMode="singleTop" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxf267cc65fb7d67c7"/>
+            </intent-filter>
+
+        </activity>
+
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- alipay sdk end -->
+
+        <!--           LLYT SDK START
+                <activity
+                    android:name="com.yintong.secure.activity.BaseActivity"
+                    android:configChanges="orientation|keyboardHidden"
+                    android:screenOrientation="portrait"
+                    android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                    android:windowSoftInputMode="adjustResize" >
+                </activity>
+
+                <service
+                    android:name="com.yintong.secure.service.PayService">
+                </service>
+                LLYT SDK END -->
+
+
+        <activity
+            android:name="com.il360.xiaofeiyu.alipay.AliPayActivity_"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.DEMO" />
+
+        <activity
+            android:name="com.il360.xiaofeiyu.alipay.PaySuccessActivity_"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DEMO"/>
+
+        <!-- 芝麻信用 -->
+
+        <!--<activity-->
+            <!--android:name="com.android.moblie.zmxy.antgroup.creditsdk.app.SDKActivity"-->
+            <!--android:label="@string/zmxy_label"-->
+            <!--android:screenOrientation="portrait" />-->
+
+         <!--魔蝎-->
+        <activity
+            android:name="com.moxie.client.MainActivity">
+        </activity>
+
+        <!-- 强制更新 -->
+        <service android:name="com.ydtong.autoupdate.AuDownloadService" />
+
+        <meta-data
+            android:name="AU_APPKEY"
+            android:value="xiaofeiyu_android" />
+        <meta-data
+            android:name="AU_CHANNEL"
+            android:value="web" />
+
+    </application>
+
+</manifest>

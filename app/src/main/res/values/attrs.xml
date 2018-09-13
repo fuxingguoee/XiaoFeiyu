@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackgroundPull" format="reference|color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="CircleImageView">
+        <attr name="mBorderWidth" format="dimension" />
+        <attr name="mBorderColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="Captcha">
+        <attr name="src" format="reference"/>
+        <attr name="progressDrawable" format="reference"/>
+        <attr name="thumbDrawable" format="reference"/>
+        <attr name="mode_self" format="enum">
+            <enum name="mode_bar" value="1"/>
+            <enum name="mode_nonbar" value="2"/>
+        </attr>
+        <attr name="max_fail_count" format="integer"/>
+        <attr name="blockSize" format="dimension"/>
+    </declare-styleable>
+
+</resources>

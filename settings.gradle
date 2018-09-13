@@ -1,0 +1,5 @@
+include ':app', ':PushSDK'
+include ':librarypull'
+include ':autoUpdate'
+include ':superActivity'
+include ':securePay'

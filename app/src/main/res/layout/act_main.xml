@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rgpNavMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <RadioButton
+            android:id="@+id/rHome"
+            style="@style/main_radio_bottom"
+            android:drawableTop="@drawable/radio_home"
+            android:text="首页" />
+        
+        <RadioButton
+            android:id="@+id/rAuthen"
+            style="@style/main_radio_bottom"
+            android:drawableTop="@drawable/radio_authen"
+            android:text="认证" />
+
+        <RadioButton
+            android:id="@+id/rDiscover"
+            style="@style/main_radio_bottom"
+            android:drawableTop="@drawable/radio_discover"
+            android:text="发现" />
+        
+        <RadioButton
+            android:id="@+id/rOrder"
+            style="@style/main_radio_bottom"
+            android:drawableTop="@drawable/radio_order"
+            android:text="订单" />
+
+        <RadioButton
+            android:id="@+id/rUser"
+            style="@style/main_radio_bottom"
+            android:drawableTop="@drawable/radio_user"
+            android:text="我的" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/flytTabContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvLine"
+        android:background="#f1f1f1" >
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rgpNavMenu"
+        android:background="#e5e5e6" />
+
+</RelativeLayout>

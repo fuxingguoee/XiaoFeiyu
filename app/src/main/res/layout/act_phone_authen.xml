@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/phone_authen_tp1"
+        android:textColor="@color/text_black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="156dp" 
+        android:layout_height="156dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_phone_authen"
+        />
+    
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="正在认证中..."
+        android:textColor="@color/text_black"
+        android:textSize="16sp" />
+    
+    <TextView 
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="注:建议在wifi等网络良好且稳定的环境进行认证"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+    
+</LinearLayout>

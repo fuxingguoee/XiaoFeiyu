@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SuperAppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Actionbar color -->
+        <item name="android:colorPrimary">@color/super_real_status_bar</item>
+        <!--Status bar color-->
+        <item name="android:colorPrimaryDark">@color/super_real_status_bar</item>
+        <!--Navigation bar color-->
+        <item name="android:navigationBarColor">@color/super_real_nav_bar</item>
+    </style>
+</resources>

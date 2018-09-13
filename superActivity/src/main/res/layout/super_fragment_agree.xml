@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/agree_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:padding="4dp"
+    android:layout_marginBottom="10dp"
+    android:gravity="center">
+    <CheckBox
+        android:id="@+id/check_box_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="2dp"
+        android:button="@drawable/super_agree_bg"
+        android:onClick="userAgreementChenge"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/tv_agree"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="我已阅读并同意用户协议"
+        android:onClick="setUserAgreement"
+        android:textSize="13sp"/>
+
+</LinearLayout>

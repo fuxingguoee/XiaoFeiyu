@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="6dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tvOrderNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="订单号:"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/tvOrderNo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvOrderNo"
+            android:padding="5dp"
+            android:text="8888888"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPayTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderNo"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="缴费日期:"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/tvPayTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderNo2"
+            android:layout_toRightOf="@+id/tvPayTime"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="2018-7-1"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPayMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPayTime"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="缴费类型:"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/tvPayMethod2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPayTime2"
+            android:layout_toRightOf="@+id/tvPayMethod"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="续费"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvPayPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="支付0.01元"
+            android:textColor="@color/text_black"
+            android:textSize="19sp" />
+                
+        <TextView
+            android:id="@+id/tvPayResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvPayPrice"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="支付成功"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>
